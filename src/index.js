@@ -60,7 +60,7 @@ async function main() {
         null,
         null,
         "Failed to load proxies, using default IP",
-        "warning"
+        "error"
       );
     }
 

@@ -74,8 +74,10 @@ async function checkIP(index, total) {
 async function getRandomProxy(index, total) {
   if (proxyList.length === 0) {
     axiosConfig = {};
-    await checkIP(index, total);
-    return null;
+    const ipResult = await checkIP(index, total);
+    if (ipResult.success) {
+      return { proxy: null, ip: ipResult.ip };
+    }
   }
 
   let proxyAttempt = 0;
