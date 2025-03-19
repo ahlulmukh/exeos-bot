@@ -1,0 +1,17 @@
+[
+    {
+        "token": "your_token",
+        "extensionId": [
+            "your_extension_id",
+            "your_extension_id2",
+            "your_extension_id3"
+        ]
+    },
+    {
+        "token": "your_token2",
+        "extensionId": [
+            "your_extension_id",
+            "your_extension_id2"
+        ]
+    }
+]
